@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="See your current public IP address."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Your IP address</title>
+  </head>
+  <body>
+    <main class="network-info" data-state="loading">
+      <p
+        class="ip-address"
+        id="ip-address"
+        aria-label="Public IP address"
+        aria-live="polite"
+      >
+        Loading…
+      </p>
+      <button class="retry" id="retry" type="button" hidden>Try again</button>
+    </main>
+
+    <noscript>This page needs JavaScript to find your public IP address.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
